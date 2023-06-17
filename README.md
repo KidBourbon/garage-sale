@@ -1,2 +1,2 @@
-# garage-sale
-Personal project: a website for a garage sale
+# yard-sale-website
+Personal project: a website for a yard sale
