@@ -98,9 +98,13 @@
             .logo {
                 display: block;
             }
-            .signup-button {
-                position: relative;
-                top: 115px;
+
+            @media (min-height: 540px){
+                .signup-button {
+                    position: fixed;
+                    bottom: 30px;
+                    width: inherit;
+                }
             }
         }
     </style>
