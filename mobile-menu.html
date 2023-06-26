@@ -24,6 +24,9 @@
             margin: 0;
         }
         .mobile-menu {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
             padding: 24px;
         }
         .mobile-menu a {
@@ -36,8 +39,11 @@
             padding: 0;
             list-style: none;
         }
-        .mobile-menu ul:nth-child(1) {
+        .mobile-menu ul:first-child {
             border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobile-menu ul:last-child {
+            margin-bottom: 24px;
         }
         .mobile-menu ul li {
             margin-bottom: 24px;
@@ -49,17 +55,6 @@
         .mobile-menu .sign-out {
             font-size: var(--sm);
             color: var(--hospital-green);
-        }
-        @media (min-height: 565px) {
-            .mobile-menu ul:last-child {
-                position: absolute;
-                bottom: 0px;
-            }
-        }
-        @media (max-height: 565px) {
-            .mobile-menu ul:nth-child(2) {
-                border-bottom: 1px solid var(--very-light-pink);
-            }
         }
     </style>
 </head>
