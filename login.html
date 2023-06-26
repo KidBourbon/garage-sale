@@ -98,13 +98,16 @@
             .logo {
                 display: block;
             }
-
-            @media (min-height: 540px){
-                .signup-button {
-                    position: fixed;
-                    bottom: 30px;
-                    width: inherit;
-                }
+            .form-container {
+                grid-template-rows: 1fr 2fr 1fr;
+                height: 100%;
+            }
+            .logo {
+                align-self: flex-end;
+            }
+            .secondary-button {
+                align-self: flex-end;
+                margin-bottom: 30px;
             }
         }
     </style>
