@@ -3,38 +3,57 @@ const navbarEmail = document.querySelector('.navbar__email');
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
 const navbarShoppingCart = document.querySelector('.navbar__shopping-cart');
 const cardsContainer = document.querySelector('.cards-container');
+const productDetailsCloseIcon = document.querySelector(
+	'.product-details__close-icon'
+);
 
 // Menus to show or hide
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const shoppingCart = document.querySelector('.shopping-cart');
+const productDetails = document.querySelector('.product-details');
 
-navbarEmail.addEventListener('click', toogleDesktopMenu);
-mobileMenuIcon.addEventListener('click', toogleMobileMenu);
-navbarShoppingCart.addEventListener('click', toogleShoppingCart);
+navbarEmail.addEventListener('click', toggleDesktopMenu);
+mobileMenuIcon.addEventListener('click', toggleMobileMenu);
+navbarShoppingCart.addEventListener('click', toggleShoppingCart);
+productDetailsCloseIcon.addEventListener('click', function () {
+	closeMenus([productDetails]);
+});
 
 // Functions to show or hide menus
-function toogleDesktopMenu() {
-	closeMenus([shoppingCart]);
+function toggleDesktopMenu() {
+	closeMenus([shoppingCart, productDetails]);
 
 	desktopMenu.classList.toggle('inactive');
 }
 
-function toogleMobileMenu() {
-	closeMenus([shoppingCart]);
+function toggleMobileMenu() {
+	closeMenus([shoppingCart, productDetails]);
 
 	mobileMenu.classList.toggle('inactive');
 }
 
-function toogleShoppingCart() {
-	closeMenus([desktopMenu, mobileMenu]);
+function toggleShoppingCart() {
+	closeMenus([desktopMenu, mobileMenu, productDetails]);
 
 	shoppingCart.classList.toggle('inactive');
+}
+
+function toggleProductDetails() {
+	closeMenus([desktopMenu, mobileMenu, shoppingCart]);
+
+	productDetails.classList.toggle('inactive');
 }
 
 function closeMenus(menuArray) {
 	for (let menu of menuArray) {
 		menu.classList.add('inactive');
+	}
+}
+
+function openMenus(menuArray) {
+	for (let menu of menuArray) {
+		menu.classList.remove('inactive');
 	}
 }
 
@@ -49,8 +68,11 @@ const product = {
 		'https://images.pexels.com/photos/17211591/pexels-photo-17211591/free-photo-of-bicycle-parked-under-building-painted-blue.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
 };
 
+// Amount of products to render
+let amountProducts = 6;
+
 // Add n-products to my product list
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < amountProducts; i++) {
 	productList.push(product);
 }
 
@@ -64,6 +86,10 @@ function renderProducts(productArray) {
 		productCardImage.classList.add('product-card__image');
 		productCardImage.setAttribute('src', product.image);
 		productCardImage.setAttribute('alt', 'Product');
+		productCardImage.addEventListener('click', function () {
+			closeMenus([desktopMenu, mobileMenu, shoppingCart]);
+			openMenus([productDetails]);
+		});
 
 		const productCardFooter = document.createElement('div');
 		productCardFooter.classList.add('product-card__footer');
