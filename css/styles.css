@@ -43,11 +43,13 @@ nav {
 	top: 0;
 	background-color: var(--white);
 	border-bottom: 1px solid var(--very-light-pink);
+	z-index: 1;
 }
 
 .mobile-menu-icon {
 	display: none;
 	width: 25px;
+	cursor: pointer;
 }
 
 .logo {
@@ -131,6 +133,7 @@ nav {
 	background-color: var(--white);
 	border: 1px solid var(--very-light-pink);
 	border-radius: 6px;
+	z-index: 1;
 }
 
 .desktop-menu ul {
@@ -180,6 +183,7 @@ nav {
 	background-color: var(--white);
 	border: 1px solid var(--very-light-pink);
 	border-radius: 0 8px 8px 0;
+	z-index: 1;
 }
 
 .mobile-menu ul {
@@ -236,6 +240,7 @@ main {
 	background-color: var(--white);
 	border: 1px solid var(--very-light-pink);
 	border-radius: 8px 0 0 8px;
+	z-index: 1;
 }
 
 .shopping-cart__title-container {
@@ -321,10 +326,11 @@ main {
 /* Products */
 .cards-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	place-content: center;
-	gap: 36px;
-	padding: 22px;
+	place-items: center;
+	gap: 36px 16px;
+	padding: 40px 22px;
 }
 
 .cards-container__product-card {
@@ -332,6 +338,7 @@ main {
 	flex-direction: column;
 	justify-content: flex-end;
 	gap: 10px;
+	max-width: 280px;
 }
 
 .product-card__image {
@@ -339,10 +346,11 @@ main {
 	object-fit: cover;
 	cursor: pointer;
 	transition: transform 0.3s;
+	transform-origin: bottom center;
 }
 
 .product-card__image:hover {
-	transform: scale(1.2);
+	transform: scale(1.15);
 }
 
 .product-card__footer {
@@ -388,6 +396,7 @@ main {
 	background-color: var(--white);
 	border: 1px solid var(--very-light-pink);
 	border-radius: 8px 0 0 8px;
+	z-index: 1;
 }
 
 .product-details__close-icon {
@@ -482,7 +491,10 @@ main {
 		display: none;
 	}
 	.cards-container {
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	}
+	.cards-container__product-card {
+		max-width: 260px;
 	}
 }
 
@@ -505,6 +517,9 @@ main {
 		max-width: 100%;
 	}
 	.cards-container {
-		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.cards-container__product-card {
+		max-width: 200px;
 	}
 }
