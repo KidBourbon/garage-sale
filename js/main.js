@@ -65,7 +65,7 @@ const myProducts = [
 		category: categoryClothes,
 		description:
 			"Men's and women's blue jeans with little time of use. Very comfortable when walking. Perfect for a casual outing with your family, friends or even your partner.",
-		image: '../images/blue-jeans.webp',
+		image: './images/blue-jeans.webp',
 	},
 	{
 		name: 'Laptop',
@@ -73,7 +73,7 @@ const myProducts = [
 		category: categoryElectronics,
 		description:
 			'Laptop for work purposes. It has little time of use. Advanced hardware features. No technical problems.',
-		image: '../images/laptop.webp',
+		image: './images/laptop.webp',
 	},
 	{
 		name: 'Sofa',
@@ -81,7 +81,7 @@ const myProducts = [
 		category: categoryFurnitures,
 		description:
 			'Quite comfortable sofa with soft pillows. It has space for 4 people. Plenty of room to take a nap. Perfect for sharing with your family, your friends or your partner on a movie night.',
-		image: '../images/sofa.webp',
+		image: './images/sofa.webp',
 	},
 	{
 		name: 'Luigi, Yoshi and Mario',
@@ -89,7 +89,7 @@ const myProducts = [
 		category: categoryToys,
 		description:
 			'Collectible figurines of Luigi, Yoshi and Mario. They are small, so be careful when small children play with them.',
-		image: '../images/toys.webp',
+		image: './images/toys.webp',
 	},
 	{
 		name: 'Bike',
@@ -97,7 +97,7 @@ const myProducts = [
 		category: categoryOthers,
 		description:
 			'Bike made for dirt roads. Very useful and practical for mountain or forest excursions. Also suitable for paved roads.',
-		image: '../images/bike.webp',
+		image: './images/bike.webp',
 	},
 ];
 
