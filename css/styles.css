@@ -573,7 +573,7 @@ footer {
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 	.cards-container__product-card {
-		max-width: 200px;
+		max-width: 80%;
 	}
 	footer {
 		justify-content: space-between;
