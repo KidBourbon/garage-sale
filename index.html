@@ -24,10 +24,18 @@
 	<body>
 		<header>
 			<nav>
-				<img src="icons/icon_menu.svg" alt="menu" class="mobile-menu-icon" />
+				<img
+					src="./icons/icon_menu.svg"
+					alt="Menu icon"
+					class="mobile-menu-icon"
+				/>
 
 				<div class="navbar__left-section">
-					<img src="logos/logo_yard_sale.svg" alt="logo" class="logo" />
+					<img
+						class="navbar__logo"
+						src="./logos/logo_yard_sale.svg"
+						alt="Navbar logo"
+					/>
 
 					<ul>
 						<li>
@@ -55,7 +63,7 @@
 					<ul>
 						<li class="navbar__email">example@email.com</li>
 						<li class="navbar__shopping-cart">
-							<img src="icons/icon_shopping_cart.svg" alt="Shopping cart" />
+							<img src="./icons/icon_shopping_cart.svg" alt="Shopping cart" />
 							<div>5</div>
 						</li>
 					</ul>
@@ -131,7 +139,7 @@
 			<aside class="shopping-cart inactive">
 				<div class="shopping-cart__title-container">
 					<div class="shopping-cart__close-icon">
-						<img src="icons/flechita.svg" alt="Back arrow" />
+						<img src="./icons/flechita.svg" alt="Back arrow" />
 					</div>
 					<p class="shopping-cart__title">My shopping cart</p>
 				</div>
@@ -139,47 +147,47 @@
 				<div class="shopping-cart__content vertical-scroll">
 					<div class="shopping-cart__product">
 						<figure>
-							<img src="./images/blue-jeans.webp" alt="bike" />
+							<img src="./images/blue-jeans.webp" alt="Blue jeans" />
 						</figure>
 						<p>Blue Jeans</p>
 						<p>$16.00</p>
-						<img src="icons/icon_close.png" alt="close" />
+						<img src="./icons/icon_close.png" alt="Close icon" />
 					</div>
 
 					<div class="shopping-cart__product">
 						<figure>
-							<img src="./images/laptop.webp" alt="bike" />
+							<img src="./images/laptop.webp" alt="Laptop" />
 						</figure>
 						<p>Laptop</p>
 						<p>$400.00</p>
-						<img src="icons/icon_close.png" alt="close" />
+						<img src="./icons/icon_close.png" alt="Close icon" />
 					</div>
 
 					<div class="shopping-cart__product">
 						<figure>
-							<img src="./images/sofa.webp" alt="bike" />
+							<img src="./images/sofa.webp" alt="Sofa" />
 						</figure>
 						<p>Sofa</p>
 						<p>$280.00</p>
-						<img src="icons/icon_close.png" alt="close" />
+						<img src="./icons/icon_close.png" alt="Close icon" />
 					</div>
 
 					<div class="shopping-cart__product">
 						<figure>
-							<img src="./images/toys.webp" alt="bike" />
+							<img src="./images/toys.webp" alt="Toy" />
 						</figure>
 						<p>Luigi, Yoshi and Mario</p>
 						<p>$27.00</p>
-						<img src="icons/icon_close.png" alt="close" />
+						<img src="./icons/icon_close.png" alt="Close icon" />
 					</div>
 
 					<div class="shopping-cart__product">
 						<figure>
-							<img src="./images/bike.webp" alt="bike" />
+							<img src="./images/bike.webp" alt="Bike" />
 						</figure>
 						<p>Bike</p>
 						<p>$120.00</p>
-						<img src="icons/icon_close.png" alt="close" />
+						<img src="./icons/icon_close.png" alt="Close icon" />
 					</div>
 				</div>
 
@@ -197,22 +205,19 @@
 
 			<aside class="product-details vertical-scroll inactive">
 				<div class="product-details__close-icon">
-					<img src="icons/icon_close.png" alt="close" />
+					<img src="./icons/icon_close.png" alt="Close icon" />
 				</div>
 
-				<img class="product-details__image" src="images/bike.webp" alt="bike" />
+				<img class="product-details__image" src="" alt="" />
 
 				<div class="product-details__info-container">
-					<p class="product-details__price">$120.00</p>
-					<p class="product-details__name">Bike</p>
-					<p class="product-details__description">
-						With its practical position, this bicycle also fulfills a decorative
-						function, add your hall or workspace.
-					</p>
+					<p class="product-details__price"></p>
+					<p class="product-details__name"></p>
+					<p class="product-details__description"></p>
 				</div>
 
 				<button class="button--primary add-to-cart-button">
-					<img src="icons/bt_add_to_cart.svg" alt="Add to cart button" />
+					<img src="./icons/bt_add_to_cart.svg" alt="Add to cart button" />
 					Add to cart
 				</button>
 			</aside>
@@ -246,7 +251,57 @@
 			</section>
 		</main>
 
-		<footer></footer>
+		<footer>
+			<div class="footer__social-media-section">
+				<ul class="social-media-section__first-group">
+					<li>
+						<a
+							href="https://github.com/KidBourbon/yard-sale-website"
+							target="_blank"
+							><img src="./icons/github-icon.svg" alt="Github icon"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/leonardo-collazo-klenina/"
+							target="_blank"
+							><img src="./icons/linkedin-icon.svg" alt="LinkedIn icon"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.facebook.com/leonardo.collazo.klenina"
+							target="_blank"
+							><img src="./icons/facebook-icon.svg" alt="Facebook icon"
+						/></a>
+					</li>
+				</ul>
+
+				<ul class="social-media-section__second-group">
+					<li>
+						<a href="https://twitter.com/KidBourbon6" target="_blank"
+							><img src="./icons/x-icon.svg" alt="X icon"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/channel/UCUVv_L27fI0xbvdScYOGm2A"
+							target="_blank"
+							><img src="./icons/youtube-icon.svg" alt="Youtube icon"
+						/></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__logo-section">
+				<img
+					class="footer__logo"
+					src="./logos/logo_yard_sale.svg"
+					alt="Footer logo"
+				/>
+				<p>By Kid Bourbon</p>
+			</div>
+		</footer>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
