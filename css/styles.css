@@ -471,6 +471,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	gap: 16px;
 }
 
 .social-media-section__first-group,
@@ -478,12 +479,8 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 16px;
 	list-style: none;
-}
-
-.social-media-section__first-group li,
-.social-media-section__second-group li {
-	margin: 4px;
 }
 
 .footer__social-media-section a {
@@ -580,5 +577,14 @@ footer {
 	}
 	.footer__logo {
 		width: 125px;
+	}
+	.footer__social-media-section {
+		gap: 4px;
+	}
+	.social-media-section__first-group {
+		gap: 4px;
+	}
+	.social-media-section__second-group {
+		gap: 8px;
 	}
 }
